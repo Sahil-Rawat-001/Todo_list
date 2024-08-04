@@ -1,0 +1,152 @@
+/* index.css */
+
+/* Light/Dark Theme Background */
+body {
+    background-color: #2F3C7E; /* Dark background for the page */
+    color:#007bff; /* Light text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+}
+
+.card {
+    border-radius: 0.5rem;
+    border: none;
+    transition: transform 0.3s; /* Add a smooth transformation effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.card-body {
+    padding: 2rem;
+    background-color:   #FBEAEB; /* Darker card background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background and shadow */
+}
+
+/* Center the main container */
+.parentContainer {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #212529; /* Dark background for the container */
+    border-radius: 0.5rem;
+    transition: background-color 0.3s; /* Smooth transition for background */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .parentContainer {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+    #left-container, #right-container {
+        margin: 0.5rem;
+    }
+}
+
+#left-container, #right-container {
+    margin: 1rem;
+}
+
+#inptBox {
+    border-radius: 0.25rem;
+    border: 1px solid #ff0000; /* Light gray border */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+    background-color:#495057;
+    color: whitesmoke;
+}
+
+#inptBox:focus {
+    border-color: #fbfdff; /* Change border color on focus */
+}
+
+#submtBtn {
+    border-radius: 0.25rem;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #ffffff; /* White text */
+    border: none;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background and shadow */
+}
+
+#submtBtn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.todo_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #343a40; /* Darker card background */
+    border: 1px solid #495057; /* Darker border */
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background and shadow */
+}
+
+.todo_div:hover {
+    background-color: #495057;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.li_itm {
+    flex: 1;
+    font-size: 1rem;
+    color: #e9ecef; /* Light text color */
+    transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.chk_box {
+    margin-right: 1rem; /* Increased space between checkbox and text */
+    margin-left: 1rem;
+}
+
+.dlt_btn, .edt_btn {
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+    border: 1px solid black;
+    color: #fffffff7; /* White text */
+    margin-left: 0.5rem; /* Add space between buttons */
+}
+
+.dlt_btn {
+    background-color: #dc3545; /* Danger red */
+}
+
+.dlt_btn:hover {
+    background-color: #c82333;
+    color: black;
+}
+
+.edt_btn {
+    background-color: #07ff1c; /* Warning yellow */
+}
+
+.edt_btn:hover {
+    background-color: #39be00;
+    color: black;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #adb5bd; /* Light gray for completed tasks */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for text color and decoration */
+}
+
+.editTask {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da; /* Light gray border for input */
+    border-radius: 0.25rem;
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.editTask:focus {
+    border-color: #007bff; /* Change border color on focus */
+}
